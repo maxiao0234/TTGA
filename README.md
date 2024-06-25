@@ -29,7 +29,7 @@ Test-Time Generative Augmentation (TTGA) is a novel approach to enhance medical 
 
 ## Materials
 
-SOTA segmentation models with codes, datasets and open-source parameters. (Thanks!:two_hearts)
+SOTA segmentation models with codes, datasets and open-source parameters. (Thanks!)
 
 | Index | Physiology         | Dataset  | Paper    | Code |
 | :----:| :----:             | :----:   | :----:   |:----:|
