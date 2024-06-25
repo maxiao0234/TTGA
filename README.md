@@ -8,19 +8,19 @@ Test-Time Generative Augmentation (TTGA) is a novel approach to enhance medical 
 <img src="figs/fig-1.png">
 
 ## Augmentation
-- Optic Disc and Cup Segmentation
+:sparkles: Optic Disc and Cup Segmentation
 <p float="left">
   <img src=figs/fundus_org.png height=200 />
   <img src=figs/fundus_aug.gif height=200 /> 
 </p>
 
-- Polyp Segmentation
+:sparkles: Polyp Segmentation
 <p float="left">
   <img src=figs/polyp_org.png height=200 />
   <img src=figs/polyp_aug.gif height=200 /> 
 </p>
 
-- Skin Lesion Segmentation
+:sparkles: Skin Lesion Segmentation
 <p float="left">
   <img src=figs/skin_org.png height=200 />
   <img src=figs/skin_aug.gif height=200 /> 
@@ -28,7 +28,7 @@ Test-Time Generative Augmentation (TTGA) is a novel approach to enhance medical 
 
 
 ## Materials
-:two_hearts:SOTA segmentation models with codes, datasets and open-source parameters. (Thanks!)
+:two_hearts: SOTA segmentation models with codes, datasets and open-source parameters. (Thanks!)
 
 | Index | Physiology         | Dataset  | Paper    | Code |
 | :----:| :----:             | :----:   | :----:   |:----:|
