@@ -34,7 +34,7 @@ Test-Time Generative Augmentation (TTGA) is a novel approach to enhance medical 
 | :----:| :----:             | :----:   | :----:   |:----:|
 | 1     | Optic Disc and Cup | [REFUGE20](https://refuge.grand-challenge.org/Download/) | [Segtrain](https://arxiv.org/pdf/2105.09511)|[code](https://github.com/askerlee/segtran/)|
 | 2     | Polyp              | [Kvasir](https://datasets.simula.no/kvasir/)<br>[CVC-ClinicDB](https://www.kaggle.com/datasets/balraj98/cvcclinicdb)<br>[CVC-ColonDB](http://mv.cvc.uab.es/projects/colon-qa/cvc-colondb)<br>[CVC-300](http://adas.cvc.uab.es/endoscene)<br>[ETIS-LaribPolypDB](https://www.kaggle.com/datasets/nguyenvoquocduong/etis-laribpolypdb) | [HSNet](https://www.sciencedirect.com/science/article/abs/pii/S0010482522008812?fr=RR-2&ref=pdf_download&rr=89939d365e6984b1)|[code](https://github.com/baiboat/HSNet/)|
-| 3     | Skin Lesion        | [ISIC 2017](https://challenge.isic-archive.com/data/#2017)<br>[ISIC 2018](https://challenge.isic-archive.com/data/#2018) | [TMUnet](https://arxiv.org/pdf/2203.01932)|[code](https://github.com/rezazad68/TMUnet/)|
+| 3     | Skin Lesion        | [ISIC 2017](https://challenge.isic-archive.com/data/#2017)<br>[ISIC 2018](https://challenge.isic-archive.com/data/#2018)<br>[PH2](https://www.fc.up.pt/addi/ph2%20database.html) | [TMUnet](https://arxiv.org/pdf/2203.01932)|[code](https://github.com/rezazad68/TMUnet/)|
 
 ## Citing
 TO-DO.
