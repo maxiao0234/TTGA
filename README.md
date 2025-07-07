@@ -7,6 +7,10 @@ Test-Time Generative Augmentation (TTGA) is a novel approach to enhance medical 
 
 <img src="figs/fig-1.png">
 
+## Pipeline
+The proposed pipeline of three key workflows are presented. The test image is processed through a sequence of steps to generate a noise image at a designated step count. Using this noise image, a one-step denoising process is employed to refine a trainable null-text embedding, enabling the stable generation of results that closely resemble the initial image. In the augmentation generation phase, this null-text embedding, guided by semantic and regional information, is leveraged to produce a series of augmented images.
+<img src="figs/fig-2.png">
+
 ## Installation
 This repository requires CUDA 12.1, Python 3.9 and Pytorch 2.1. To install the latest version run:
 1. Create Conda Environment and Install Dependencies
