@@ -7,24 +7,43 @@ Test-Time Generative Augmentation (TTGA) is a novel approach to enhance medical 
 
 <img src="figs/fig-1.png">
 
-## Augmentation
-:sparkles: Optic Disc and Cup Segmentation
-<p float="left">
-  <img src=figs/fundus_org.png height=150 />
-  <img src=figs/fundus_aug.gif height=150 /> 
-</p>
+## Installation
+This repository requires CUDA 12.1, Python 3.9 and Pytorch 2.1. To install the latest version run:
+1. Create Conda Environment and Install Dependencies
+  ```
+  conda create --name ttga python=3.9
+  conda activate ttga
+  pip install -r requirements.txt
+  ```
+2. Install diffusers
+- Download diffusers==0.27.0 and extract its contents. You can do this using command-line tools:
+```
+wget https://pypi.org/packages/source/d/diffusers/diffusers-0.27.0.tar.gz
+tar -xzf diffusers-0.27.0.tar.gz
+mv diffusers-0.27.0 diffusers
+cd diffusers
+python setup.py install
+cd ..
+```
 
-:sparkles: Polyp Segmentation
-<p float="left">
-  <img src=figs/polyp_org.png height=150 />
-  <img src=figs/polyp_aug.gif height=150 /> 
-</p>
+## Running
+This section outlines the steps to run the processes described in this repository, using the **polyp** dataset as an example.
 
-:sparkles: Skin Lesion Segmentation
-<p float="left">
-  <img src=figs/skin_org.png height=150 />
-  <img src=figs/skin_aug.gif height=150 /> 
-</p>
+**Step 1: LoRA Fine-tuning of Stable Diffusion**
+First, fine-tune Stable Diffusion using `LoRA` on the polyp dataset:
+```
+bash scripts/lora_polyp.sh
+```
+
+**Step 2: One-step Null-Text Optimization**
+Next, perform one-step null-text optimization on test images to extract their identity information.
+
+**Step 3: Generative Augmentation**
+Finally, apply generative augmentation to the test images. 
+
+**Batch Operations and Demos:**
+- For **batch operations** of **Step 2** and **Step 3**, please refer to [`main.py`](main.py). This script provides a comprehensive implementation for processing multiple images.
+- A **demonstration** showcasing these processes can be found in [`demo.ipynb`](demo.ipynb). This notebook provides an interactive example of how to apply these techniques.
 
 
 ## Materials
