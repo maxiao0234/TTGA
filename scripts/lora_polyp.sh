@@ -1,6 +1,6 @@
 export CUDA_VISIBLE_DEVICES=1
 export MODEL_NAME='runwayml/stable-diffusion-v1-5'
-export DATASET_DIR='/home/Data/maxiao/Polyp/TrainDatasetLoRA'
+export DATASET_DIR=''
 export OUTPUT_DIR="outputs/polyp_lora"
 export RESOLUTION=512
 
