@@ -52,15 +52,15 @@ Finally, apply generative augmentation to the test images.
 ## Augmentation
 :sparkles: Optic Disc and Cup Segmentation
 
-<img src=figs/fundus_aug.webp height=150 />
+<img src=figs/fundus_aug.webp height=200 />
 
 :sparkles: Polyp Segmentation
 
-<img src=figs/polyp_aug.webp height=150 />
+<img src=figs/polyp_aug.webp height=200 />
 
 :sparkles: Skin Lesion Segmentation
 
-<img src=figs/skin_aug.webp height=150 />
+<img src=figs/skin_aug.webp height=200 />
 
 ## Materials
 :two_hearts: SOTA segmentation models with codes, datasets and open-source parameters. (Thanks!)
