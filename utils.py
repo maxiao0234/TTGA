@@ -225,6 +225,14 @@ def aug_one_image(args, controller, unet, latent_start, timesteps, uncond_embedd
     latent_cur = latent_start.clone()
     # adj_noise = torch.randn(1, 4, 1, 1).to(args.device) * 0.2
     # adj_noise = F.upsample(adj_noise, size=(args.resolution // 8, args.resolution // 8), mode='bilinear', align_corners=False)
+
+    drop_mask_id = torch.rand(1, 1, args.resolution // 16, args.resolution // 16).to(args.device)
+    drop_mask_id = F.upsample(drop_mask_id, size=(args.resolution // 8, args.resolution // 8), mode='nearest').squeeze(1)
+    drop_mask_id = torch.where(drop_mask_id >= args.drop_p, 1., 0.).to(args.device)
+    drop_mask_aug = torch.rand(1, 1, args.resolution // 16, args.resolution // 16).to(args.device)
+    drop_mask_aug = F.upsample(drop_mask_aug, size=(args.resolution // 8, args.resolution // 8), mode='nearest').squeeze(1)
+    drop_mask_aug = torch.where(drop_mask_aug < args.drop_p * 0.5, 1., 0.).to(args.device)
+
     for i in range(len(timesteps) - 1):
         t_cur = timesteps[i]
         t_prev = timesteps[i + 1]
@@ -251,11 +259,8 @@ def aug_one_image(args, controller, unet, latent_start, timesteps, uncond_embedd
             noise_pred = noise_pred + s_uncond * noise_pred_uncond
             map_pred = map_pred + s_uncond * map_uncond
 
-        drop_mask = torch.rand(1, 1, args.resolution // 8, args.resolution // 8).to(args.device)
-        drop_mask = F.upsample(drop_mask, size=(args.resolution // 8, args.resolution // 8), mode='bilinear', align_corners=False).squeeze(1)
-        drop_mask = torch.where(drop_mask >= args.drop_p, 1., 0.).to(args.device)
         mask_id = torch.where(map_pred < 0, 0, 1)
-        mask_id = mask_id * drop_mask
+        mask_id = mask_id * drop_mask_id + (1 - mask_id) * drop_mask_aug
         mask_aug = 1 - mask_id
 
         latent_id = denoise(args, latent_start, noise_pred_start, timesteps[0], t_prev, eta=0.0)
