@@ -49,6 +49,18 @@ Finally, apply generative augmentation to the test images.
 - For **batch operations** of **Step 2** and **Step 3**, please refer to [`main.py`](main.py). This script provides a comprehensive implementation for processing multiple images.
 - A **demonstration** showcasing these processes can be found in [`demo.ipynb`](demo.ipynb). This notebook provides an interactive example of how to apply these techniques.
 
+## Augmentation
+:sparkles: Optic Disc and Cup Segmentation
+
+<img src=figs/fundus_aug.webp height=150 />
+
+:sparkles: Polyp Segmentation
+
+<img src=figs/polyp_aug.webp height=150 />
+
+:sparkles: Skin Lesion Segmentation
+
+<img src=figs/skin_aug.webp height=150 />
 
 ## Materials
 :two_hearts: SOTA segmentation models with codes, datasets and open-source parameters. (Thanks!)
