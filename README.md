@@ -7,7 +7,7 @@
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ## 📢 News
-* **[2025.12.25]** 🎄 **Merry Christmas!** We have updated the [citation](#-Citation) and official link. The paper is now fully indexed as **Medical Image Analysis (MedIA), Vol. 109, 2026**.
+* **[2025.12.25]** 🎄 **Merry Christmas!** We have updated the Citation and official link. The paper is now fully indexed as **Medical Image Analysis (MedIA), Vol. 109, 2026**.
 * **[2025.12.02]** 🎉 **Accepted!** Our paper has been formally accepted by **Medical Image Analysis (MedIA)**!
 * **[2025.07.15]** 🛠️ **Code Release**: We have released the complete training codes and inference demos.
 
