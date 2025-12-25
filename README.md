@@ -1,6 +1,15 @@
 # Test-Time Generative Augmentation (TTGA)
 
-This is the official repository for "[Test-Time Generative Augmentation for Medical Image Segmentation](https://arxiv.org/abs/2406.17608)"
+> **[MedIA 2026]** Official PyTorch Implementation of "**Test-Time Generative Augmentation for Medical Image Segmentation**" (Medical Image Analysis).
+
+[![MedIA](https://img.shields.io/badge/MedIA-Accepted-firebrick.svg)](https://doi.org/10.1016/j.media.2025.103902)
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.media.2025.103902-blue.svg)](https://doi.org/10.1016/j.media.2025.103902)
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+## 📢 News
+* **[2025.12.25]** 🎄 **Merry Christmas!** We have updated the [citation](#-citation) and official link. The paper is now fully indexed as **Medical Image Analysis (MedIA), Vol. 109, 2026**.
+* **[2025.12.02]** 🎉 **Accepted!** Our paper has been formally accepted by **Medical Image Analysis (MedIA)**!
+* **[2025.07.15]** 🛠️ **Code Release**: We have released the complete training codes and inference demos.
 
 ## Introduction
 Test-Time Generative Augmentation (TTGA) is a novel approach to enhance medical image segmentation during test time. Instead of employing handcrafted transforms or functions on the input test image to create multiple views for test-time augmentation, this approach advocate for the utilization of an advanced domain-fine-tuned generative model, e.g., diffusion models, for test-time augmentation. Hence, by integrating the generative model into test-time augmentation, we can effectively generate multiple views of a given test sample, aligning with the content and appearance characteristics of the sample and the related local data distribution.
@@ -69,7 +78,19 @@ Finally, apply generative augmentation to the test images.
 | :----:| :----:             | :----:   | :----:   |:----:|
 | 1     | Optic Disc and Cup | [REFUGE20](https://refuge.grand-challenge.org/Download/) | [Segtrain](https://arxiv.org/pdf/2105.09511)|[code](https://github.com/askerlee/segtran/)|
 | 2     | Polyp              | [Kvasir](https://datasets.simula.no/kvasir/)<br>[CVC-ClinicDB](https://www.kaggle.com/datasets/balraj98/cvcclinicdb)<br>[CVC-ColonDB](http://mv.cvc.uab.es/projects/colon-qa/cvc-colondb)<br>[CVC-300](http://adas.cvc.uab.es/endoscene)<br>[ETIS-LaribPolypDB](https://www.kaggle.com/datasets/nguyenvoquocduong/etis-laribpolypdb) | [HSNet](https://www.sciencedirect.com/science/article/abs/pii/S0010482522008812?fr=RR-2&ref=pdf_download&rr=89939d365e6984b1)|[code](https://github.com/baiboat/HSNet/)|
-| 3     | Skin Lesion        | [ISIC 2017](https://challenge.isic-archive.com/data/#2017)<br>[ISIC 2018](https://challenge.isic-archive.com/data/#2018)<br>[PH2](https://www.fc.up.pt/addi/ph2%20database.html) | [TMUnet](https://arxiv.org/pdf/2203.01932)|[code](https://github.com/rezazad68/TMUnet/)|
+| 3     | Skin Lesion        | [ISIC 2017](https://challenge.isic-archive.com/data/#2017)<br>[ISIC 2018](https://challenge.isic-archive.com/data/#2018)<br>[PH2](https://www.fc.up.pt/addi/ph2%20database.html) | [H-vmunet](https://arxiv.org/abs/2403.13642)|[code](https://github.com/wurenkai/H-vmunet/)|
 
-## Citing
-TO-DO.
+## Citation
+If you find our work useful in your research, please consider citing:
+
+```bibtex
+@article{ma2026103902,
+  title = {Test-time generative augmentation for medical image segmentation},
+  journal = {Medical Image Analysis},
+  volume = {109},
+  pages = {103902},
+  year = {2026},
+  issn = {1361-8415},
+  doi = {10.1016/j.media.2025.103902},
+  author = {Ma, Xiao and Tao, Yuhui and Zhang, Zetian and Zhang, Yuhan and Wang, Xi and Zhang, Sheng and Ji, Zexuan and Zhang, Yizhe and Chen, Qiang and Yang, Guang}
+}
