@@ -9,7 +9,7 @@
 
 ## 📢 News
 * **[2026.01.06]** 🎆 **Happy New Year!** The [arXiv preprint](https://arxiv.org/abs/2406.17608) has been updated.
-* **[2025.12.25]** 🎄 **Merry Christmas!** We have updated the Citation and official link. The paper is now fully indexed as **Medical Image Analysis (MedIA), Vol. 109, 2026**.
+* **[2025.12.25]** 🎄 **Merry Christmas!** We have updated the Citation and [official link](https://doi.org/10.1016/j.media.2025.103902). The paper is now fully indexed as **Medical Image Analysis (MedIA), Vol. 109, 2026**.
 * **[2025.12.02]** 🎉 **Accepted!** Our paper has been formally accepted by **Medical Image Analysis (MedIA)**!
 * **[2025.07.15]** 🛠️ **Code Release**: We have released the complete training codes and inference demos.
 
