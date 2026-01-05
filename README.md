@@ -4,9 +4,11 @@
 
 [![MedIA](https://img.shields.io/badge/MedIA-Accepted-firebrick.svg)](https://doi.org/10.1016/j.media.2025.103902)
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.media.2025.103902-blue.svg)](https://doi.org/10.1016/j.media.2025.103902)
+[![arXiv](https://img.shields.io/badge/arXiv-2406.17608-b31b1b.svg)](https://arxiv.org/abs/2406.17608)
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ## 📢 News
+* **[2026.01.06]** 🎆 **Happy New Year!** The [arXiv preprint](https://arxiv.org/abs/2406.17608) has been updated.
 * **[2025.12.25]** 🎄 **Merry Christmas!** We have updated the Citation and official link. The paper is now fully indexed as **Medical Image Analysis (MedIA), Vol. 109, 2026**.
 * **[2025.12.02]** 🎉 **Accepted!** Our paper has been formally accepted by **Medical Image Analysis (MedIA)**!
 * **[2025.07.15]** 🛠️ **Code Release**: We have released the complete training codes and inference demos.
@@ -84,7 +86,7 @@ Finally, apply generative augmentation to the test images.
 If you find our work useful in your research, please consider citing:
 
 ```bibtex
-@article{ma2026103902,
+@article{ma2026ttga,
   title = {Test-time generative augmentation for medical image segmentation},
   journal = {Medical Image Analysis},
   volume = {109},
